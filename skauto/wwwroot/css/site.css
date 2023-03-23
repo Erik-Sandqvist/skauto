@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+.header{
+    width: 88%;
+    height: 10%;
+    background-color: darkgrey;
+    border: solid blue 2px;
+    margin: 0 auto;
+}

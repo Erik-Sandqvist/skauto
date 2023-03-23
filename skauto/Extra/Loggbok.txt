@@ -1,0 +1,8 @@
+﻿20-03-2023. Idag startades projektet upp och jag lom på vad jag ville göra.
+Resultatet blev att jag tänker göra en sida för att köpa och sälja
+begangnade bilar. Så jag började skriva på prjektplanen.
+
+22-03-2023. Jag fortsatte med projektplanen.
+
+23-03-2023. Jag fortsatte med projektplanen. Och kopplade upp mitt projekt
+till github.
