@@ -8,5 +8,10 @@ namespace skauto.Controllers
         {
             return View();
         }
+
+        public IActionResult Registrerar()
+        {
+            return View();
+        }
     }
 }

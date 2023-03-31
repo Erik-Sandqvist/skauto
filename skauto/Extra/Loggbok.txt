@@ -6,3 +6,9 @@ begangnade bilar. Så jag började skriva på prjektplanen.
 
 23-03-2023. Jag fortsatte med projektplanen. Och kopplade upp mitt projekt
 till github.
+
+24-03-2023. Jag skissade upp på papper och började med powerpoint storybording.
+
+29-03-2023. Jag gorde klart skiss på papper och fortsate med en prototyp i storybording.
+
+30-03-2023. Jag gorde en logga. Jag fixade även med lite grunder till min kod.
