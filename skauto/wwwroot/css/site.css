@@ -49,8 +49,7 @@ html {
             margin-top: 28px;
        
 }
-
-    .selj {  border: solid blue 4px;
+.selj {  border: solid blue 4px;
             border-radius: 6px;
             width: 16%;
             margin-left: 78px;
@@ -59,18 +58,16 @@ html {
             margin-top: 28px;
        
 }
-
-    .inlagg {
+.inlagg {
             width: 48%;
             height: 270px;
             margin-top: 50px;
             margin-left: 180px;
             border: solid blue 2px;
             border-radius: 6px;
-            background-color: rgb(239, 236, 250);
-       
+            background-color: rgb(239, 236, 250);  
 }
-    .logga {
+.logga {
    width: 170px;
     height: 70px;
    margin-left: 180px;
@@ -80,7 +77,7 @@ html {
 .lenkbort {
     margin: 0 auto;
     text-align: center;
-    margin-top: 10px;     
+    margin-top: 10px;
 }
 .annons {
     width: 18%;
@@ -90,4 +87,58 @@ html {
     border: solid blue 2px;
     border-radius: 6px;
     float: right;
+}
+.rubrikloggin {
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid black 2px;
+    border-radius: 6px;
+    background-color: rgb(65, 65, 228);
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logginfelt {
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: solid black 2px;
+    border-radius: 6px;
+    background-color: rgb(65, 65, 228);
+}
+.reg {
+    width: 370px;
+    height: 70px;
+    margin: 0 auto;
+    border: solid black 2px;
+    border-radius: 6px;
+    background-color: rgb(110, 110, 121);
+    margin-top: 110px;
+    text-align: center;
+}
+.loggin {
+    width: 370px;
+    height: 70px;
+    margin: 0 auto;
+    border: solid black 2px;
+    border-radius: 6px;
+    background-color: rgb(110, 110, 121);
+    margin-top: 60px;
+    text-align: center;
+}
+.rubrik {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+.fix {
+    margin-top: 22px;
+}
+.fas {
+    font-size: 36px;
+    margin-top: 12px;
+    margin-left: 15px;
 }
