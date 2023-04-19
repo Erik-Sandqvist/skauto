@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgb(220, 238, 236);
+    background-color: #c2d9e1;
 }
 
 
@@ -87,6 +87,7 @@ html {
     border: solid blue 2px;
     border-radius: 6px;
     float: right;
+
 }
 .rubrikloggin {
     width: 70%;
@@ -141,4 +142,21 @@ html {
     font-size: 36px;
     margin-top: 12px;
     margin-left: 15px;
+}
+
+.bil {
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: dotted black 2px;
+    border-radius: 6px;
+}
+.egentext {
+    width: 70%;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid black 2px;
+    border-radius: 6px;
 }
