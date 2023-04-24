@@ -65,7 +65,7 @@ html {
     margin-top: 50px;
     margin-left: 180px;
     border-radius: 6px;
-    background-color: #28abe3;
+    background-color: #115c7c;
 }
 .bild {
     width: 240px;
@@ -119,14 +119,14 @@ html {
     margin-top: 50px;
     border: solid black 2px;
     border-radius: 6px;
-    background-color: rgb(65, 65, 228);
+    background-color: #233793;
 }
 
 
 .form-group {
     margin: 0 auto;
    font-weight: 400;
-    color: black;
+    color: white;
 }
 .reg {
     width: 370px;
