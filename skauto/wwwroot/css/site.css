@@ -126,7 +126,7 @@ html {
 .form-group {
     margin: 0 auto;
    font-weight: 400;
-    color: aquamarine;
+    color: black;
 }
 .reg {
     width: 370px;
@@ -187,4 +187,7 @@ html {
     color: black;
     display: flex;
     flex-wrap: nowrap;
+}
+.form{
+    float: right;
 }

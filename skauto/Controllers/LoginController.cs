@@ -13,5 +13,11 @@ namespace skauto.Controllers
         {
             return View();
         }
+
+        public IActionResult Login(string mailadress, string password)
+        {
+
+            return RedirectToAction("Index", "laddaupp"); 
+        }
     }
 }
