@@ -33,6 +33,14 @@ html {
             flex-wrap: wrap;
        
 }
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
     .skauto {
             margin-left: 180px;
@@ -48,16 +56,17 @@ html {
             height: 58px;
             margin-left: 928px;
             margin-top: 28px;
-       
+            color: white;
 }
-.selj {  border: solid blue 4px;
-            border-radius: 6px;
-            width: 16%;
-            margin-left: 78px;
-            width: 160px;
-            height: 58px;
-            margin-top: 28px;
-       
+.selj {
+    border: solid blue 4px;
+    border-radius: 6px;
+    width: 16%;
+    margin-left: 78px;
+    width: 160px;
+    height: 58px;
+    margin-top: 28px;
+    color: white;
 }
 .inlagg {
     width: 48%;
@@ -66,12 +75,21 @@ html {
     margin-left: 180px;
     border-radius: 6px;
     background-color: #115c7c;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    position: relative
 }
 .bild {
     width: 240px;
     height: 210px;
     margin-left: 10px;
+    margin-top: 34px;
     background-color: #696969;
+}
+.info {
+    margin-left: 180px;
+    color: white;
+    margin-top: 34px;
 }
 .bildinlegg{
     width: 340px;
@@ -167,6 +185,7 @@ html {
     margin-top: 50px;
     border: dotted black 2px;
     border-radius: 6px;
+    grid-template-columns: 400px 400px;
 }
 .egentext {
     width: 70%;
@@ -189,5 +208,5 @@ html {
     flex-wrap: nowrap;
 }
 .form{
-    float: right;
+    
 }

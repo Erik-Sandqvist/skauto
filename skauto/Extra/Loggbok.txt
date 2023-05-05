@@ -22,3 +22,5 @@ till github.
 19-04-2023. Idag fortsatte jag med den grafiska manualen.
 
 20-04-2023. Idag fortsatte jag med den grafiska manualen och blev klar med den (i tid).
+
+05-05-2023. Idag jobbade jag med koden och strukturen.
