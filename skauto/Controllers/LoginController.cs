@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using skauto.Models;
 
 namespace skauto.Controllers
 {
@@ -9,15 +10,25 @@ namespace skauto.Controllers
             return View();
         }
 
-        public IActionResult Registrerar()
+        public IActionResult Register(string mailadress, string password, string namn)
         {
-            return View();
+            bool lyckad = skuser.registerNyUser(mailadress, password, namn);
+            return RedirectToAction("Index", "laddaupp");
         }
 
-        public IActionResult Login(string mailadress, string password)
+            public IActionResult Login(string mailadress, string password)
         {
+            skuser anton  = skuser.GetEmployeeByMail(mailadress);
 
-            return RedirectToAction("Index", "laddaupp"); 
+            if (anton.password == password)
+            {
+                return RedirectToAction("Index", "laddaupp");
+            }
+            else
+            {
+                ViewBag.ErrorMSG = "Fel ...";
+                return View("Index"); 
+            }
         }
     }
 }

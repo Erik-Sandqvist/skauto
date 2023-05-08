@@ -1,5 +1,17 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<head>
+    <script src='https://kit.fontawesome.com/ba7c1ecbff.js' crossorigin='anonymous'></script>
+
+</head>
+
+
+<body>
+<div class="rubrikloggin row">
+    <i class='fas fa-arrow-circle-left'></i>
+    <p class="rubrik">Sälj din bil</p>
+</div>
+<div class="logginfelt">
+
+    <div class="loggin"> @Html.Partial("RegisterPartial.cshtml")</div>
+    <h3>@ViewBag.ErrorMsg</h3>
+    </div>
+</body>

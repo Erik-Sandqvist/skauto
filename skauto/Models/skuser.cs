@@ -26,7 +26,7 @@ namespace skauto.Models {
 
 
             MySqlConnection conn = new MySqlConnection(conStr);
-            MySqlCommand MyCom = new MySqlCommand("Select * from Employee where mailadress = @ID", conn);
+            MySqlCommand MyCom = new MySqlCommand("Select * from skuser where mailadress = @ID", conn);
             MyCom.Parameters.AddWithValue("@ID", mail);
             conn.Open();
 
@@ -39,6 +39,7 @@ namespace skauto.Models {
                 singleEmp.namn = reader.GetString("namn");
                 singleEmp.mailadress = reader.GetString("mailadress");
                 singleEmp.roll = reader.GetString("roll");
+                singleEmp.password = reader.GetString("password"); 
 
             }
 
@@ -48,7 +49,24 @@ namespace skauto.Models {
             return singleEmp;
         }
 
+        internal static string GetUser(string mailadress)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static bool registerNyUser(string mailadress, string password, string namn)
+        {
+            MySqlConnection conn = new MySqlConnection(conStr);
+            MySqlCommand MyCom = new MySqlCommand("INSERT INTO skuser ( mailadress, password, namn)" +
+                                          "VALUES ('@MAIL', '@PASS', '@NAMN');", conn);
+            MyCom.Parameters.AddWithValue("@MAIL", mailadress);
+            MyCom.Parameters.AddWithValue("@PASS", password);
+            MyCom.Parameters.AddWithValue("@NAMN", namn);
+            conn.Open();
+            MyCom.ExecuteNonQuery();
 
 
+            return true; 
+        }
     }
 }
