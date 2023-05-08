@@ -126,7 +126,7 @@ html {
     margin-top: 50px;
     border: solid black 2px;
     border-radius: 6px;
-    background-color: rgb(65, 65, 228);
+    background-color: #3753D4;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -137,7 +137,7 @@ html {
     margin-top: 50px;
     border: solid black 2px;
     border-radius: 6px;
-    background-color: #233793;
+    background-color: #3753D4;
 }
 
 
