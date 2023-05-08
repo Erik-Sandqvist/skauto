@@ -213,3 +213,216 @@ h4{
 .form{
     
 }
+@media screen and (max-width: 1400px) {
+
+    body{
+        background-color: forestgreen;
+    }
+
+    .header {
+        width: 100%;
+        height: 132px;
+        background-color: #696969;
+        border: solid black 1px;
+        margin: 0 auto;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .skauto {
+        margin-left: 180px;
+        font-size: 220%;
+        margin-top: 28px;
+    }
+
+    .verdera {
+        border: solid blue 4px;
+        border-radius: 6px;
+        width: 160px;
+        height: 58px;
+        margin-left: 628px;
+        margin-top: 28px;
+        color: white;
+    }
+
+    .selj {
+        border: solid blue 4px;
+        border-radius: 6px;
+        width: 16%;
+        margin-left: 78px;
+        width: 160px;
+        height: 58px;
+        margin-top: 28px;
+        color: white;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    .inlagg {
+        width: 48%;
+        height: 270px;
+        margin-top: 50px;
+        margin-left: 180px;
+        border-radius: 6px;
+        background-color: #115c7c;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        position: relative
+    }
+
+    .bild {
+        width: 240px;
+        height: 210px;
+        margin-left: 10px;
+        margin-top: 34px;
+        background-color: #696969;
+    }
+
+    .info {
+        margin-left: 180px;
+        color: white;
+        margin-top: 34px;
+    }
+
+    .bildinlegg {
+        width: 340px;
+        height: 310px;
+        margin-left: 10px;
+        background-color: #696969;
+    }
+
+    .logga {
+        width: 170px;
+        height: 70px;
+        margin-left: 180px;
+        margin-top: 32px;
+        margin-bottom: 2px;
+    }
+
+    .lenkbort {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .annons {
+        width: 18%;
+        height: 250px;
+        margin-right: 260px;
+        margin-top: 50px;
+        border: solid blue 2px;
+        border-radius: 6px;
+        float: right;
+    }
+
+    .rubrikloggin {
+        width: 70%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: solid black 2px;
+        border-radius: 6px;
+        background-color: #3753D4;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .logginfelt {
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: solid black 2px;
+        border-radius: 6px;
+        background-color: #3753D4;
+    }
+
+
+    .form-group {
+        margin: 0 auto;
+        font-weight: 400;
+        color: white;
+    }
+
+    .reg {
+        width: 370px;
+        height: 70px;
+        margin: 0 auto;
+        border: solid black 2px;
+        border-radius: 6px;
+        background-color: rgb(110, 110, 121);
+        margin-top: 210px;
+        text-align: center;
+    }
+
+    .loggin {
+        width: 370px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .rubrik {
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 14px;
+    }
+
+    .fix {
+        margin-top: 22px;
+    }
+
+    .fas {
+        font-size: 36px;
+        margin-top: 12px;
+        margin-left: 15px;
+    }
+
+    .bil {
+        width: 70%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: dotted black 2px;
+        border-radius: 6px;
+        grid-template-columns: 400px 400px;
+    }
+
+    .egentext {
+        width: 70%;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: solid black 2px;
+        border-radius: 6px;
+    }
+
+    .rubrikloggin2 {
+        width: 70%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: solid black 2px;
+        border-radius: 6px;
+        background-color: rgb(65, 65, 228);
+        color: black;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .form {
+    }
