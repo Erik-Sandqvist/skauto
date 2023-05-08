@@ -7,16 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\Login\RegisterPartial.txt" />
-    <None Remove="Views\Login\Registrerar.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Views\Login\RegisterPartial.txt" />
-    <Content Include="Views\Login\Registrerar.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
     <PackageReference Include="MySql.Data" Version="8.0.32.1" />
   </ItemGroup>
 

@@ -1,12 +1,17 @@
 ﻿@model skauto.Models.skuser
 
-<h4>Logga in</h4>
+<h4>skuser</h4>
 <hr />
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4">
         <form asp-action="Register">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
+           
+            <div class="form-group">
+                <label asp-for="namn" class="control-label"></label>
+                <input asp-for="namn" class="form-control" />
+                <span asp-validation-for="namn" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="mailadress" class="control-label"></label>
                 <input asp-for="mailadress" class="form-control" />
@@ -17,17 +22,16 @@
                 <input asp-for="password" class="form-control" />
                 <span asp-validation-for="password" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
-                <label asp-for="nam" class="control-label"></label>
-                <input asp-for="namn class="form-control" />
-                <span asp-validation-for="namn" class="text-danger"></span>
-            </div>
-           <hr />
-            <div class="form-group">
-                <input type="submit" value="Logga in" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
