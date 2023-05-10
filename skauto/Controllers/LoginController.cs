@@ -10,6 +10,11 @@ namespace skauto.Controllers
             return View();
         }
 
+        public IActionResult RegisterStart()
+        {
+            return View("Registrerar"); 
+        }
+
         public IActionResult Register(string mailadress, string password, string namn)
         {
             bool lyckad = skuser.registerNyUser(mailadress, password, namn);

@@ -58,14 +58,14 @@ namespace skauto.Models {
         {
             MySqlConnection conn = new MySqlConnection(conStr);
             MySqlCommand MyCom = new MySqlCommand("INSERT INTO skuser ( mailadress, password, namn)" +
-                                          "VALUES ('@MAIL', '@PASS', '@NAMN');", conn);
+                                          "VALUES (@MAIL, @PASS, @NAMN);", conn);
             MyCom.Parameters.AddWithValue("@MAIL", mailadress);
             MyCom.Parameters.AddWithValue("@PASS", password);
             MyCom.Parameters.AddWithValue("@NAMN", namn);
             conn.Open();
             MyCom.ExecuteNonQuery();
 
-
+            conn.Close(); 
             return true; 
         }
     }

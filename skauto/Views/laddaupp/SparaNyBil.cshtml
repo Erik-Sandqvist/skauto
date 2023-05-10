@@ -1,0 +1,64 @@
+﻿@model skauto.Models.bilinfo
+
+@{
+    ViewData["Title"] = "SparaNyBil";
+}
+
+<h1>SparaNyBil</h1>
+
+<h4>bilinfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SparaNyBil">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label asp-for="Märke" class="control-label"></label>
+                <input asp-for="Märke" class="form-control" />
+                <span asp-validation-for="Märke" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Årsmodell" class="control-label"></label>
+                <input asp-for="Årsmodell" class="form-control" />
+                <span asp-validation-for="Årsmodell" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Växellåda" class="control-label"></label>
+                <input asp-for="Växellåda" class="form-control" />
+                <span asp-validation-for="Växellåda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hästkrafter" class="control-label"></label>
+                <input asp-for="Hästkrafter" class="form-control" />
+                <span asp-validation-for="Hästkrafter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mil" class="control-label"></label>
+                <input asp-for="Mil" class="form-control" />
+                <span asp-validation-for="Mil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Plats" class="control-label"></label>
+                <input asp-for="Plats" class="form-control" />
+                <span asp-validation-for="Plats" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pris" class="control-label"></label>
+                <input asp-for="Pris" class="form-control" />
+                <span asp-validation-for="Pris" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
