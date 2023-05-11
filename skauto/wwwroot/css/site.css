@@ -97,6 +97,10 @@ h4{
     margin-top: 34px;
     background-color: #696969;
 }
+.annonsbild {
+    width: 100%;
+    height: 100%;
+}
 .info {
     margin-left: 180px;
     color: white;
@@ -202,6 +206,7 @@ h4{
 }
 .bigrow{
     margin-left: 40px;
+    color: green;
 }
 .egentext {
     width: 70%;
