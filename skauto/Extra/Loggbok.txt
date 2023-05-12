@@ -30,3 +30,5 @@ till github.
 10-05-2023. Jag jobbade med datbasen.
 
 11-05-2023. Jag har jobbat med utsendet på sidan.
+
+12-05-2023. Idag har jag jobbat med att få information till databasen och sen hänta den infon från databasen.

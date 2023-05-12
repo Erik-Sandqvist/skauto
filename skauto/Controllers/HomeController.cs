@@ -15,7 +15,11 @@ namespace skauto.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<bilinfo> biList = new List<bilinfo>();
+
+            biList = bilinfo.GetallCars(); 
+
+            return View( biList);
         }
 
         public IActionResult Privacy()

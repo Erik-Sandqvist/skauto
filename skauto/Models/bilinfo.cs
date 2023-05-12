@@ -29,7 +29,7 @@ namespace skauto.Models
         public static void Sparabil(bilinfo bi) {
 
             MySqlConnection conn = new MySqlConnection(conStr);
-            MySqlCommand MyCom = new MySqlCommand("Insert INTO bilinfo (Märke, Årsmodell, Växellåda, Hästkragfter, Mil, Plats, Pris ) " +
+            MySqlCommand MyCom = new MySqlCommand("Insert INTO bilinfo (Märke, Årsmodell, Växellåda, Hästkrafter, Mil, Plats, Pris ) " +
                                                 "Values( @MÄRKE, @ÅRSMODELL, @Årsmodell, @Växellåda, @Hästkragfter, @Mil, @Plats, @Pris  ); "); 
             MyCom.Parameters.AddWithValue("@MÄRKE", bi.Märke);
 
@@ -39,34 +39,89 @@ namespace skauto.Models
             conn.Close();
             ;
         }
-/*
-        public static bilinfo GetEmployeeByMail(string mail)
+
+        internal static List<bilinfo> GetallCars()
         {
+            List<bilinfo> biList = new List<bilinfo>(); 
+            MySqlConnection conn = new MySqlConnection(conStr);
+            MySqlCommand MyCom = new MySqlCommand("Select * from bilinfo", conn);
 
-
+            conn.Open();
 
             MySqlDataReader reader = MyCom.ExecuteReader();
 
-            skuser singleEmp = new skuser();
+            while (reader.Read())
+            {
+                bilinfo bi = new bilinfo();
+                bi.id = reader.GetInt32("Id"); 
+                bi.Märke = reader.GetString("Märke");
+                bi.Årsmodell = reader.GetInt32("Årsmodell");
+                bi.Växellåda = reader.GetString("Växellåda");
+                bi.Hästkrafter = reader.GetInt32("Hästkrafter");
+                bi.Mil = reader.GetInt32("Mil");
+                bi.Plats = reader.GetString("Plats");
+                bi.Pris = reader.GetInt32("Pris");
+
+                biList.Add(bi); 
+            }
+            conn.Close(); 
+
+            return biList; 
+        }
+
+        internal static bilinfo GetCarsByID(int id)
+        {
+           
+            MySqlConnection conn = new MySqlConnection(conStr);
+            MySqlCommand MyCom = new MySqlCommand("Select * from bilinfo WHERE Id = @ID", conn);
+            MyCom.Parameters.AddWithValue("@ID", id); 
+
+            conn.Open();
+
+            MySqlDataReader reader = MyCom.ExecuteReader();
+            bilinfo bi = new bilinfo(); 
             if (reader.Read())
             {
-                singleEmp.Id = reader.GetInt32("id");
-                singleEmp.Märke = reader.GetString("Märke");
-                singleEmp.Årsmodell = reader.GetString("Årsmodell");
-                singleEmp.Växellåda = reader.GetString("Växellåda");
-                singleEmp.Hästkrafter = reader.GetString("Hästkrafter");
-                singleEmp.Mil = reader.GetString("Mil");
-                singleEmp.Plats = reader.GetString("Plats");
-                singleEmp.Pris = reader.GetString("Pris");
-
+                bi.id = reader.GetInt32("Id");
+                bi.Märke = reader.GetString("Märke");
+                bi.Årsmodell = reader.GetInt32("Årsmodell");
+                bi.Växellåda = reader.GetString("Växellåda");
+                bi.Hästkrafter = reader.GetInt32("Hästkrafter");
+                bi.Mil = reader.GetInt32("Mil");
+                bi.Plats = reader.GetString("Plats");
+                bi.Pris = reader.GetInt32("Pris");
             }
+            conn.Close(); 
+            return bi; 
+        }
+        /*
+public static bilinfo GetEmployeeByMail(string mail)
+{
 
-            MyCom.Dispose();
-            conn.Close();
 
-            return singleEmp;
-        }*/
 
-       
+  MySqlDataReader reader = MyCom.ExecuteReader();
+
+  skuser singleEmp = new skuser();
+  if (reader.Read())
+  {
+      singleEmp.Id = reader.GetInt32("id");
+      singleEmp.Märke = reader.GetString("Märke");
+      singleEmp.Årsmodell = reader.GetString("Årsmodell");
+      singleEmp.Växellåda = reader.GetString("Växellåda");
+      singleEmp.Hästkrafter = reader.GetString("Hästkrafter");
+      singleEmp.Mil = reader.GetString("Mil");
+      singleEmp.Plats = reader.GetString("Plats");
+      singleEmp.Pris = reader.GetString("Pris");
+
+  }
+
+  MyCom.Dispose();
+  conn.Close();
+
+  return singleEmp;
+}*/
+
+
     }
 }

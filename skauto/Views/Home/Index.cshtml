@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model List<bilinfo> 
 
 
     <div class="header">
@@ -21,67 +21,38 @@
     </div>
 
 <div class="annons"> <img class="annonsbild" src="/bilder/annons.jpeg"></div>
+
+    @foreach(bilinfo bi in Model){
+
     <div class="inlagg">
 
 
-    <div class="bild"> <img class="" src="/bilder/begangnadbil1.jfif"></div>
+    <div class="bild"> <img class="" src="/bilder/opel astra.jpeg"></div>
 
         <div class="info">
             <ul>
-            <li>Märke</li>
-            <li>Årsmodell</li>
-            <li>Hästkrafter</li>
-            <li>Mil</li>
-            <li>Plats</li>
+                <li>Märke: @bi.Märke</li>
+                <li>Årsmodell: @bi.Årsmodell</li>
+                <li>Växellåda: @bi.Växellåda</li>
+                <li>Hästkrafter: @bi.Hästkrafter</li>
+                <li>Mil: @bi.Mil</li>
+                <li>Plats: @bi.Plats</li>
             <br>
-            <li>Pris</li>
+                <li>@bi.Pris</li>             
             </ul>
         </div>
-    <a asp-action="Index" asp-controller="buy">
+    <a asp-action="Index" asp-controller="buy" asp-route-id="@bi.id">
         <span class="link"></span>
     </a>
     </div>
+    }
 
-<div class="inlagg">
-    <div class="bild"> <img class="" src="/bilder/begangnadbil1.jfif"></div>
 
-    <div class="info">
-        <ul>
-            <li>Märke</li>
-            <li>Årsmodell</li>
-            <li>Hästkrafter</li>
-            <li>Mil</li>
-            <li>Plats</li>
-            <br>
-            <li>Pris</li>
-        </ul>
-    </div>
-    <a asp-action="Index" asp-controller="buy">
-        <span class="link"></span>
-    </a>
-</div>
 
 <div class="annons"> <img class="annonsbild" src="/bilder/annons2.jpeg"></div>
 
 
-   <div class="inlagg">
-    <div class="bild"> <img class="" src="/bilder/begangnadbil1.jfif"></div>
-
-    <div class="info">
-        <ul>
-            <li>Märke</li>
-            <li>Årsmodell</li>
-            <li>Hästkrafter</li>
-            <li>Mil</li>
-            <li>Plats</li>
-            <br>
-            <li>Pris</li>
-        </ul>
-    </div>
-    <a asp-action="Index" asp-controller="buy">
-        <span class="link"></span>
-    </a>
-   </div>
+   
 
 
 

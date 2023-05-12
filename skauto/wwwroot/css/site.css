@@ -87,7 +87,7 @@ h4{
     border-radius: 6px;
     background-color: #115c7c;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 300px 500px;
     position: relative
 }
 .bild {

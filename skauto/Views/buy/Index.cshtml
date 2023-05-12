@@ -1,4 +1,4 @@
-﻿
+﻿@model bilinfo
 
 <body>
 
@@ -16,6 +16,18 @@
             bilder
         </div>
         <div class="form">Formulär</div>
+        <div class="info">
+            <ul>
+                <li>Märke: @Model.Märke</li>
+                <li>Årsmodell: @Model.Årsmodell</li>
+                <li>Växellåda: @Model.Växellåda</li>
+                <li>Hästkrafter: @Model.Hästkrafter</li>
+                <li>Mil: @Model.Mil</li>
+                <li>Plats: @Model.Plats</li>
+                <br>
+                <li>@Model.Pris</li>
+            </ul>
+        </div>
     </div>
     <div class="egentext"> Beskrivning i egna ord om bilen</div>
 
