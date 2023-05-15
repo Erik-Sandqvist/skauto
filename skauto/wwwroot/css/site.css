@@ -23,6 +23,7 @@ html {
 a {
     color: white;
     text-decoration: none;
+    font-family: Segoe UI;
 }
 a:hover{
     color:#c2d9e1;
@@ -40,6 +41,13 @@ a:hover{
             flex-wrap: wrap;
        
 }
+.logga {
+    width: 170px;
+    height: 70px;
+    margin-left: 180px;
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
 .link {
     position: absolute;
     width: 100%;
@@ -49,21 +57,16 @@ a:hover{
     z-index: 1;
 }
 
-    .skauto {
-            margin-left: 180px;
-            font-size: 220%;
-            margin-top: 28px;
-       
-}
-
-    .verdera {
-           border: solid 4px white;
-            border-radius: 6px;
-            width: 160px;
-            height: 58px;
-            margin-left: 928px;
-            margin-top: 28px;
-            color: white;
+.verdera {
+    border: solid 4px white;
+    border-radius: 6px;
+    width: 160px;
+    height: 58px;
+    margin-left: 928px;
+    margin-top: 28px;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .selj {
     border: solid 4px white;
@@ -74,10 +77,14 @@ a:hover{
     height: 58px;
     margin-top: 28px;
     color: white;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 
-h4{
+h4 {
     color: white;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .inlagg {
     width: 48%;
@@ -88,7 +95,9 @@ h4{
     background-color: #115c7c;
     display: grid;
     grid-template-columns: 300px 500px;
-    position: relative
+    position: relative;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .bild {
     width: 240px;
@@ -106,23 +115,25 @@ h4{
     color: white;
     margin-top: 34px;
 }
+.info2 {
+    margin-left: 310px;
+    color: white;
+    margin-top: 54px;
+}
 .bildinlegg{
     width: 340px;
     height: 310px;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin-top: 60px;
     background-color: #696969;
 }
-.logga {
-   width: 170px;
-    height: 70px;
-   margin-left: 180px;
-    margin-top: 32px;
-    margin-bottom: 2px;
-}
+
 .lenkbort {
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .annons {
     width: 18%;
@@ -158,8 +169,10 @@ h4{
 
 .form-group {
     margin: 0 auto;
-   font-weight: 400;
+    font-weight: 400;
     color: white;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .reg {
     width: 370px;
@@ -170,6 +183,7 @@ h4{
     background-color: rgb(110, 110, 121);
     margin-top: 210px;
     text-align: center;
+
 }
 .loggin {
     width: 370px;
@@ -184,6 +198,8 @@ h4{
     margin: 0 auto;
     margin-top: 14px;
     color: white;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .fix {
     margin-top: 22px;
@@ -196,17 +212,20 @@ h4{
 
 .bil {
     width: 70%;
-    height: 630px;
+    height: 510px;
     margin: 0 auto;
     margin-top: 50px;
     border: dotted black 2px;
     border-radius: 6px;
     display: grid;
-    grid-template-columns: 600px 400px;
+    grid-template-columns: 600px 600px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .bigrow{
     margin-left: 40px;
     color: green;
+    width: 700px;
 }
 .egentext {
     width: 70%;
@@ -229,7 +248,7 @@ h4{
     flex-wrap: nowrap;
 }
 .form{
-    
+    color: mediumvioletred;
 }
 @media screen and (max-width: 1400px) {
 
