@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using skauto.Models;
 
 namespace skauto.Controllers
@@ -11,11 +12,39 @@ namespace skauto.Controllers
         }
 
 
-        public IActionResult SparaNyBil(bilinfo bi)
-        {
-            bilinfo.Sparabil(bi);
+       
 
-            return RedirectToAction("Index", "Home"); 
+
+        public IActionResult SparaNyBil(bilinfoPlusBild pi)
+        {
+            try
+            {
+
+
+                Guid g = Guid.NewGuid();
+                string fileName = g.ToString() + ".jpg";
+                pi.FilNamn = fileName;
+
+                string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "/upload", fileName);
+
+                var stream = new FileStream(uploadpath, FileMode.Create);
+
+                pi.produktImage.CopyToAsync(stream);
+
+                ViewBag.Message = "File uploaded successfully.";
+                bilinfo.Sparabil(pi);
+
+            }
+
+            catch
+
+            {
+
+                ViewBag.Message = "Error while uploading the files.";
+
+            }
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

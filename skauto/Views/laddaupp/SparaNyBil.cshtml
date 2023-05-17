@@ -1,4 +1,4 @@
-﻿@model skauto.Models.bilinfo
+﻿@model skauto.Models.bilinfoPlusBild
 
 @{
     ViewData["Title"] = "SparaNyBil";
@@ -48,6 +48,11 @@
             <div class="form-group">
                 <br />
                 <input type="submit" value="Spara" class="btn btn-primary" />
+            </div>
+
+            <div class="col-md-10">
+                <p>Ladda upp bild på bil</p>
+                <input type="file" name="Filnamn" />
             </div>
         </form>
     </div>

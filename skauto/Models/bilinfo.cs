@@ -25,12 +25,14 @@ namespace skauto.Models
 
         public int Pris { get; set; } 
 
+        public string FilNamn { get; set; }
+
 
         public static void Sparabil(bilinfo bi) {
 
             MySqlConnection conn = new MySqlConnection(conStr);
-            MySqlCommand MyCom = new MySqlCommand("Insert INTO bilinfo (Märke, Årsmodell, Växellåda, Hästkrafter, Mil, Plats, Pris ) " +
-                                                "Values( @MÄRKE, @ÅRSMODELL, @Växellåda, @Hästkrafter, @Mil, @Plats, @Pris  ); ", conn); 
+            MySqlCommand MyCom = new MySqlCommand("Insert INTO bilinfo (Märke, Årsmodell, Växellåda, Hästkrafter, Mil, Plats, Pris, Filnamn ) " +
+                                                "Values( @MÄRKE, @ÅRSMODELL, @Växellåda, @Hästkrafter, @Mil, @Plats, @Pris, @FILNAMN  ); ", conn); 
             MyCom.Parameters.AddWithValue("@MÄRKE", bi.Märke);
             MyCom.Parameters.AddWithValue("@ÅRSMODELL", bi.Årsmodell);
             MyCom.Parameters.AddWithValue("@Växellåda", bi.Växellåda);
@@ -38,6 +40,7 @@ namespace skauto.Models
             MyCom.Parameters.AddWithValue("@Mil", bi.Mil);
             MyCom.Parameters.AddWithValue("@Plats", bi.Plats);
             MyCom.Parameters.AddWithValue("@Pris", bi.Pris);
+            MyCom.Parameters.AddWithValue("@FILNAMN", bi.FilNamn);
 
 
 

@@ -10,7 +10,7 @@ namespace skauto.Controllers
             
 
            bilinfo bi  = bilinfo.GetCarsByID(Id);
-
+           
             return View(bi);
         }
 
