@@ -33,4 +33,9 @@ till github.
 
 12-05-2023. Idag har jag jobbat med att få information till databasen och sen hänta den infon från databasen.
 
-15-05--2023. Idag har jag jobbat med utsendet på hemsidan och den ser okej ut.
+15-05-2023. Idag har jag jobbat med utsendet på hemsidan och den ser okej ut.
+
+17-05-2023. Idag jobbade jag med att försöka möjligöra så att man kan skicka och
+            hämta bilder till och från databasen.
+
+18-05-2023. Idag jobbade jag med utsendet på sidan.

@@ -118,11 +118,15 @@ h4 {
     margin-left: 180px;
     color: white;
     margin-top: 34px;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .info2 {
     margin-left: 310px;
-    color: white;
+    color: black;
     margin-top: 54px;
+    font-family: Segoe UI;
+    font-weight: 500;
 }
 .bildinlegg{
     width: 340px;
@@ -226,6 +230,17 @@ h4 {
     display: flex;
     flex-wrap: wrap;
 }
+.bil2 {
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: dotted black 2px;
+    border-radius: 6px;
+    grid-template-columns: 600px 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .bigrow{
     margin-left: 40px;
     color: green;
@@ -257,7 +272,7 @@ h4 {
 @media screen and (max-width: 1400px) {
 
     body {
-        background-color: #3753D4;
+        background-color: #c2d9e1;
     }
 
     .header {
@@ -287,24 +302,29 @@ h4 {
     }
 
     .verdera {
-        border: solid blue 4px;
+        border: solid White 4px;
         border-radius: 6px;
-        width: 160px;
-        height: 58px;
-        margin-left: 358px;
-        margin-top: 28px;
+        width: 140px;
+        height: 52px;
+        margin-left: 500px;
+        margin-top: 34px;
         color: white;
+        font-family: Segoe UI;
+        font-weight: 500;
     }
 
+
     .selj {
-        border: solid blue 4px;
+        border: solid White 4px;
         border-radius: 6px;
         width: 16%;
-        margin-left: 78px;
-        width: 160px;
-        height: 58px;
-        margin-top: 28px;
+        margin-left: 98px;
+        width: 140px;
+        height: 52px;
+        margin-top: 34px;
         color: white;
+        font-family: Segoe UI;
+        font-weight: 500;
     }
 
     h4 {
@@ -336,6 +356,16 @@ h4 {
         color: white;
         margin-top: 34px;
         font-size: 16px;
+        font-family: Segoe UI;
+        font-weight: 500;
+    }
+   
+    .info2 {
+        margin-left: 310px;
+        color: black;
+        margin-top: 34px;
+        font-family: Segoe UI;
+        font-weight: 500;
     }
 
     .bildinlegg {
@@ -362,7 +392,7 @@ h4 {
     .annons {
         width: 18%;
         height: 250px;
-        margin-right: 140px;
+        margin-right: 180px;
         margin-top: 50px;
         border: solid blue 2px;
         border-radius: 6px;
@@ -396,6 +426,12 @@ h4 {
         margin: 0 auto;
         font-weight: 400;
         color: white;
+    }
+
+    .form-group2 {
+        margin: 0 auto;
+        font-weight: 400;
+        color: black;
     }
 
     .reg {
@@ -432,6 +468,10 @@ h4 {
         margin-top: 12px;
         margin-left: 15px;
     }
+    .bildhöger{
+        float: right;
+        margin-left: 200px;
+    }
 
     .bil {
         width: 70%;
@@ -441,6 +481,19 @@ h4 {
         border: dotted black 2px;
         border-radius: 6px;
         grid-template-columns: 400px 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bil2 {
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: dotted black 2px;
+        border-radius: 6px;
+        grid-template-columns: 400px 400px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .bigrow {
@@ -448,7 +501,6 @@ h4 {
         color: green;
         width: 400px;
     }
-
     .egentext {
         width: 70%;
         height: 150px;

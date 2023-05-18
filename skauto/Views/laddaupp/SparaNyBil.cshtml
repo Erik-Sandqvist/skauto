@@ -6,16 +6,17 @@
 
 
 <div class="bigrow">
+
     <div class="col-md-4">
         <form asp-action="SparaNyBil" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
            
-            <div class="form-group">
+            <div class="form-group2">
                 <label asp-for="Märke" class="control-label"></label>
                 <input asp-for="Märke" class="form-control" value="Toyota"/>
                 <span asp-validation-for="Märke" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group2">
                 <label asp-for="Årsmodell" class="control-label"></label>
                 <input asp-for="Årsmodell" class="form-control" value="2011" />
                 <span asp-validation-for="Årsmodell" class="text-danger"></span>
@@ -45,13 +46,17 @@
                 <input asp-for="Pris" class="form-control" value="210000" />
                 <span asp-validation-for="Pris" class="text-danger"></span>
             </div>
-            <div class="col-md-10">
+            <div class="bildhöger">
+            <div class="col-md-12">
                 <p>Ladda upp bild på bil</p>
-                <input type="file" name="produktImage" />
+                    <div class="bildhöger">
+                        <input type="file" name="produktImage" />
+                        </div>
             </div>
             <div class="form-group">
                 <br />
                 <input type="submit" value="Spara" class="btn btn-primary" />
+            </div>
             </div>
 
             
