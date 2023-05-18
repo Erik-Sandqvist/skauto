@@ -7,53 +7,54 @@
 
 <div class="bigrow">
     <div class="col-md-4">
-        <form asp-action="SparaNyBil">
+        <form asp-action="SparaNyBil" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
            
             <div class="form-group">
                 <label asp-for="Märke" class="control-label"></label>
-                <input asp-for="Märke" class="form-control" />
+                <input asp-for="Märke" class="form-control" value="Toyota"/>
                 <span asp-validation-for="Märke" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Årsmodell" class="control-label"></label>
-                <input asp-for="Årsmodell" class="form-control" />
+                <input asp-for="Årsmodell" class="form-control" value="2011" />
                 <span asp-validation-for="Årsmodell" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Växellåda" class="control-label"></label>
-                <input asp-for="Växellåda" class="form-control" />
+                <input asp-for="Växellåda" class="form-control" value="manuell" />
                 <span asp-validation-for="Växellåda" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Hästkrafter" class="control-label"></label>
-                <input asp-for="Hästkrafter" class="form-control" />
+                <input asp-for="Hästkrafter" class="form-control" value="121" />
                 <span asp-validation-for="Hästkrafter" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Mil" class="control-label"></label>
-                <input asp-for="Mil" class="form-control" />
+                <input asp-for="Mil" class="form-control" value="12300" />
                 <span asp-validation-for="Mil" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Plats" class="control-label"></label>
-                <input asp-for="Plats" class="form-control" />
+                <input asp-for="Plats" class="form-control" value="Habo" />
                 <span asp-validation-for="Plats" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Pris" class="control-label"></label>
-                <input asp-for="Pris" class="form-control" />
+                <input asp-for="Pris" class="form-control" value="210000" />
                 <span asp-validation-for="Pris" class="text-danger"></span>
+            </div>
+            <div class="col-md-10">
+                <p>Ladda upp bild på bil</p>
+                <input type="file" name="produktImage" />
             </div>
             <div class="form-group">
                 <br />
                 <input type="submit" value="Spara" class="btn btn-primary" />
             </div>
 
-            <div class="col-md-10">
-                <p>Ladda upp bild på bil</p>
-                <input type="file" name="Filnamn" />
-            </div>
+            
         </form>
     </div>
 </div>

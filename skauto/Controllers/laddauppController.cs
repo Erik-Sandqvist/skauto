@@ -23,9 +23,9 @@ namespace skauto.Controllers
 
                 Guid g = Guid.NewGuid();
                 string fileName = g.ToString() + ".jpg";
-                pi.FilNamn = fileName;
+                pi.FilNamn = fileName;                
 
-                string uploadpath = Path.Combine(Directory.GetCurrentDirectory(), "/upload", fileName);
+                string uploadpath = Directory.GetCurrentDirectory() + "\\upload\\" + fileName;
 
                 var stream = new FileStream(uploadpath, FileMode.Create);
 
