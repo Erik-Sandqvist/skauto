@@ -22,6 +22,8 @@
 
 <div class="annons"> <img class="annonsbild" src="/bilder/annons.jpeg"></div>
 
+
+
     @foreach(bilinfo bi in Model){
 
     <div class="inlagg">
@@ -38,7 +40,7 @@
                 <li>Mil: @bi.Mil</li>
                 <li>Plats: @bi.Plats</li>
             <br>
-                <li>@bi.Pris</li>             
+                <li>pris: @bi.Pris kr</li>             
             </ul>
         </div>
     <a asp-action="Index" asp-controller="buy" asp-route-id="@bi.id">

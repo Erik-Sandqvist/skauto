@@ -76,9 +76,10 @@ namespace skauto.Models
 
                 biList.Add(bi); 
             }
+
             conn.Close(); 
 
-            return biList; 
+            return biList.OrderByDescending(b => b.id).ToList(); 
         }
 
         internal static bilinfo GetCarsByID(int id)

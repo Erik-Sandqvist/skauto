@@ -39,3 +39,6 @@ till github.
             hämta bilder till och från databasen.
 
 18-05-2023. Idag jobbade jag med utsendet på sidan.
+
+21-05-2023. Idag försökte jag göra så att sidan såg helt klar ut plus att jag jobbade med ordningen
+            inläggen skulle komma i från databasen.
