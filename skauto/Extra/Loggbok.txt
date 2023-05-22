@@ -42,3 +42,6 @@ till github.
 
 21-05-2023. Idag försökte jag göra så att sidan såg helt klar ut plus att jag jobbade med ordningen
             inläggen skulle komma i från databasen.
+
+22-05-2023. Idag gorde jag så att det som hämtas från databasen syns på alla ställen det ska synas på och webbsidan 
+            är i princip klar.
