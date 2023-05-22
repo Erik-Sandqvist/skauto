@@ -103,6 +103,8 @@ namespace skauto.Models
                 bi.Mil = reader.GetInt32("Mil");
                 bi.Plats = reader.GetString("Plats");
                 bi.Pris = reader.GetInt32("Pris");
+                bi.FilNamn = reader.GetString("Filnamn");
+
             }
             conn.Close(); 
             return bi; 

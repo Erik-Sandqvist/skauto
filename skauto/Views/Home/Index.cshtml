@@ -29,7 +29,7 @@
     <div class="inlagg">
 
 
-    <div> <img class="bild" src="upload/@bi.FilNamn"></div>
+    <div> <img class="bild" src="/upload/@bi.FilNamn"></div>
 
         <div class="info">
             <ul>
@@ -52,5 +52,30 @@
 
 
 <div class="annons"> <img class="annonsbild" src="/bilder/annons2.jpeg"></div>
+@foreach (bilinfo bi in Model)
+{
 
-   <div class="inlagg">
+    <div class="inlagg">
+
+
+        <div> <img class="bild" src="/upload/@bi.FilNamn"></div>
+
+        <div class="info">
+            <ul>
+                <li>Märke: @bi.Märke</li>
+                <li>Årsmodell: @bi.Årsmodell</li>
+                <li>Växellåda: @bi.Växellåda</li>
+                <li>Hästkrafter: @bi.Hästkrafter</li>
+                <li>Mil: @bi.Mil</li>
+                <li>Plats: @bi.Plats</li>
+                <br>
+                <li>pris: @bi.Pris kr</li>
+            </ul>
+        </div>
+        <a asp-action="Index" asp-controller="buy" asp-route-id="@bi.id">
+            <span class="link"></span>
+        </a>
+    </div>
+}
+
+   
